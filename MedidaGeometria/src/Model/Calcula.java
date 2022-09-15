@@ -2,7 +2,7 @@ package Model;
 
 public class Calcula {
 	
-	private double areaTriangulo;
+	private double areaTriangulo ;
 	private double areaQuadrado;
 	private double areaRetangulo;
 	private double areaCirculo;
@@ -31,19 +31,21 @@ public class Calcula {
 		return areaRetangulo = cal.getBaseR() * cal.getAlturaR();                   /* area = base*altura  */
 	}
 	
-	public double AreaCirculo() {                                                /*     area = π r²   */
-		return  areaCirculo = (cal.getArea()*2) * cal.getPi();
+	public double AreaCirculo() {                         /* (A = π r²).*/
+		return areaCirculo =  cal.getPi()*(cal.getAreaC()*2);
 	}
-
-	public double getAreaTriangulo() {
-		return areaTriangulo;
-	}
+	 
 
 /*================================================================GET end SET===============================================================================================*/
 	
 	
+	
 	public void setAreaTriangulo(double areaTriangulo) {
 		this.areaTriangulo = areaTriangulo;
+	}
+
+	public double getAreaTriangulo() {
+		return areaTriangulo;
 	}
 
 	public double getAreaQuadrado() {

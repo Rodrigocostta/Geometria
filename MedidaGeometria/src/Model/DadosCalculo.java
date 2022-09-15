@@ -5,7 +5,7 @@ public class DadosCalculo {
 	private double baseT, L1, L2; /* variaveis para triangulo */ /* A = b*h/2 */
 	private double baseQ, alturaQ; /* variaveis para quadrado */ /* Lx2 */
 	private double baseR, alturaR; /* variaveis para retangulo */ /* A=b⋅h */
-	private double area, AreaC;
+	private double AreaC;
 	private final double pi = 3.14; /* variaveis para circulo */ /*
 																	 * A área de um círculo é pi vezes o raio elevado ao
 																	 * quadrado (A = π r²).
@@ -72,13 +72,6 @@ public class DadosCalculo {
 		this.alturaR = alturaR;
 	}
 
-	public double getArea() {
-		return area;
-	}
-
-	public void setArea(double area) {
-		this.area = area;
-	}
 
 	public double getAreaC() {
 		return AreaC;
