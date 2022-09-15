@@ -16,15 +16,13 @@ public class Principal {
 		if (resp == 1) {
 
 			String inputbase = JOptionPane.showInputDialog(null, "entre com a area do traingulo\nDigite a : Base");
-			String inputL1 = JOptionPane.showInputDialog(null, "entre com a area do traingulo\nDigite o : Lado 2");
-			String inputL2 = JOptionPane.showInputDialog(null, "entre com a area do traingulo\nDigite o : Lado 1");
+			String inputL1 = JOptionPane.showInputDialog(null, "entre com a area do traingulo\nDigite o : Lado 1");
+			String inputL2 = JOptionPane.showInputDialog(null, "entre com a area do traingulo\nDigite o : Lado 2");
 			calcula.getCal().setBaseT(Double.parseDouble(inputbase));
 			calcula.getCal().setL1(Double.parseDouble(inputL1));
 			calcula.getCal().setL2(Double.parseDouble(inputL2));
-			/*
-			 * double l1 = Double.parseDouble(inputL1); double l2 =
-			 * Double.parseDouble(inputL2);
-			 */
+			
+			JOptionPane.showMessageDialog(null,"A  AREA DO TRIANGULO É DE:  "+calcula.AreaTriangulo());
 		} /*
 			 * else if(resp == 2) { String bR = JOptionPane.showInputDialog(
 			 * null,"Entre com o valor de um lado do retangulo\n"); String altR =
